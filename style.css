@@ -1,7 +1,12 @@
 body {
-    background-color: #cfa37e;
+    background-image: url("images/butterflybg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
     font-family:"cinzel", serif;
     font-style:italic;
+    background-attachment: scroll;
 }
 
 h1 {
@@ -12,28 +17,34 @@ h1 {
     text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.3);
 }
 .butterfly-gallery {
-    display:inline-flex;
+    display: inline-block;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items:flex-start;
-    padding: 20px;
-    margin: 20px;
+    align-items:center;
+    margin: 50px;
 }
 .butterfly-card {
-    background-color:bisque;
+     background-color:bisque;
     border-radius: none;
     width: 300px;
-    margin: 15px;
+    padding: 30px;
+    margin: 20px;
     box-shadow: 0 4px 8px rgb(74, 35, 6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 a {
     text-decoration: none;
     padding: 20px;
+    margin: 30px;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
     color: #4b2e1e;
 }
-
+.butterfly-card:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px)
+}
 a:hover {
     color: goldenrod;
 }

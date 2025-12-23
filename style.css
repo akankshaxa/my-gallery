@@ -6,36 +6,44 @@ body {
     margin: 0;
     font-family:"cinzel", serif;
     font-style:italic;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 h1 {
     color: #511e0a;
     text-align: center;
-    font-size: 50px;
-    margin-top: 50px;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.3);
+    font-size: 60px;
+    margin-top: 40px;
+    padding-top: 50px;
+    text-shadow: 2px 2px 0px rgb(234, 152, 101);
 }
 .butterfly-gallery {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:center;
-    margin: 50px;
+    gap: 30px;
+    padding: 40px 20px;
+    margin: 0 auto;
+   
 }
 .butterfly-card {
-     background-color:bisque;
+    vertical-align: top;
+    background-color:bisque;
     border-radius: none;
-    width: 300px;
-    padding: 30px;
-    margin: 20px;
+    width: 320px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgb(74, 35, 6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.butterfly-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+ 
 a {
     text-decoration: none;
-    padding: 20px;
-    margin: 30px;
     text-align: center;
     font-size: 28px;
     font-weight: bold;

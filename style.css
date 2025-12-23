@@ -1,9 +1,34 @@
 body {
-    background-color:lightblue;
-    font-family:"Montserrat", monospace;
+    background-color: #cfa37e;
+    font-family:"cinzel", serif;
 }
 
 h1 {
-    color: darkblue;
+    color: #250d04;
     text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+.butterfly-gallery {
+    display:inline-flex;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 20px;
+    margin: 20px;
+}
+.butterfly-card {
+    background-color:bisque;
+    border-radius: 10px;
+    width:300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(30, 15, 1, 0.2);
+}
+a {
+    font-style:italic;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b2e1e;
 }
